@@ -19,15 +19,18 @@
 
         .image-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: space-around;
             margin: 20px;
         }
 
         .image-container img {
-            max-width: 30%; /* Adjust the width as needed */
+            max-width: 100%; /* Adjust the width as needed */
+            height: auto;
             border-radius: 15px;
             transition: transform 0.3s ease-in-out;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+            margin-bottom: 10px;
         }
 
         .image-container img:hover {
@@ -39,9 +42,14 @@
         }
 
         video {
-            max-width: 80%;
+            max-width: 100%;
+            height: auto;
             border-radius: 15px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+        }
+
+        #audio-container {
+            margin-top: 20px;
         }
 
         #play-button {
@@ -79,7 +87,9 @@
         </audio>
         <button id="play-button">Play Voice Record</button>
     </div>
-  <img src="logine/Logine.png" alt="Scan to open the HTML page">
+
+    <img src="logine/Logine.png" alt="Scan to open the HTML page">
+
     <script>
         document.getElementById('play-button').addEventListener('click', function () {
             var audio = document.getElementById('romantic-audio');
