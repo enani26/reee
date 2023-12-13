@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Romantic Page</title>
+    <title>Logine's Birthday QR</title>
     <style>
         body {
             font-family: 'Georgia', serif;
@@ -25,7 +25,7 @@
         }
 
         .image-container img {
-            max-width: 50%;
+            max-width: 100%;
             height: auto;
             border-radius: 15px;
             transition: transform 0.3s ease-in-out;
@@ -60,6 +60,12 @@
             border: none;
             border-radius: 5px;
             cursor: pointer;
+        }
+
+        @media (max-width: 300px) {
+            .image-container {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
